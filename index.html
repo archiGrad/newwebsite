@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/filetree.css">
+		<link rel="stylesheet" href="styles/threejs.css">
+		<link rel="stylesheet" href="styles/content.css">
+	</head>
+
+	<body>
+		<!-- File Tree (Left Panel) -->
+		<div id="dir_tree">
+			<div class="tree">
+				<div class="tree-line">
+					<span class="folder" onclick="toggle(this)">.</span>
+				</div>
+				
+				<div class="content">
+					<!-- corneel_collab -->
+					<div class="tree-line">
+						<span class="prefix">├── </span>
+						<span class="folder" onclick="toggle(this)">corneel_collab</span>
+					</div>
+					<div class="content hidden">
+						<div class="tree-line">
+							<span class="prefix">│   </span><span class="prefix">└── </span>
+							<span class="folder" onclick="toggle(this)">v1</span>
+						</div>
+						<div class="content hidden">
+							<div class="tree-line">
+								<span class="prefix">│   </span><span class="prefix">    </span><span class="prefix">└── </span>
+								<span class="folder" onclick="toggle(this)">factory</span>
+							</div>
+							<div class="content hidden">
+								<div class="tree-line">
+									<span class="prefix">│   </span><span class="prefix">    </span><span class="prefix">    </span><span class="prefix">└── </span>
+									<span class="file">factory_recovered.hiplc</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Single File -->
+					<div class="tree-line">
+						<span class="prefix">├── </span>
+						<span class="file">counter.hiplc</span>
+					</div>
+
+					<!-- david Kahl JSON -->
+					<div class="tree-line">
+						<span class="prefix">├── </span>
+						<span class="folder" onclick="toggle(this)">david Kahl JSON</span>
+					</div>
+					<div class="content hidden">
+						<!-- Backup Section -->
+						<div class="tree-line">
+							<span class="prefix">│   </span><span class="prefix">├── </span>
+							<span class="folder" onclick="toggle(this)">backup</span>
+						</div>
+						<div class="content hidden">
+							<div class="tree-line"><span class="prefix">│   </span><span class="prefix">│   </span><span class="prefix">├── </span><span class="file">extract and use JSON_bak10.hiplc</span></div>
+							<div class="tree-line"><span class="prefix">│   </span><span class="prefix">│   </span><span class="prefix">├── </span><span class="file">extract and use JSON_bak11.hiplc</span></div>
+							<div class="tree-line"><span class="prefix">│   </span><span class="prefix">│   </span><span class="prefix">├── </span><span class="file">extract and use JSON_bak12.hiplc</span></div>
+							<div class="tree-line"><span class="prefix">│   </span><span class="prefix">│   </span><span class="prefix">├── </span><span class="file">extract and use JSON_bak1.hiplc</span></div>
+							<div class="tree-line"><span class="prefix">│   </span><span class="prefix">│   </span><span class="prefix">├── </span><span class="file">extract and use JSON_bak2.hiplc</span></div>
+							<div class="tree-line"><span class="prefix">│   </span><span class="prefix">│   </span><span class="prefix">├── </span><span class="file">extract and use JSON_bak3.hiplc</span></div>
+							<div class="tree-line"><span class="prefix">│   </span><span class="prefix">│   </span><span class="prefix">├── </span><span class="file">extract and use JSON_bak4.hiplc</span></div>
+							<div class="tree-line"><span class="prefix">│   </span><span class="prefix">│   </span><span class="prefix">├── </span><span class="file">extract and use JSON_bak5.hiplc</span></div>
+							<div class="tree-line"><span class="prefix">│   </span><span class="prefix">│   </span><span class="prefix">├── </span><span class="file">extract and use JSON_bak6.hiplc</span></div>
+							<div class="tree-line"><span class="prefix">│   </span><span class="prefix">│   </span><span class="prefix">├── </span><span class="file">extract and use JSON_bak7.hiplc</span></div>
+							<div class="tree-line"><span class="prefix">│   </span><span class="prefix">│   </span><span class="prefix">├── </span><span class="file">extract and use JSON_bak8.hiplc</span></div>
+							<div class="tree-line"><span class="prefix">│   </span><span class="prefix">│   </span><span class="prefix">└── </span><span class="file">extract and use JSON_bak9.hiplc</span></div>
+						</div>
+
+						<!-- Main Files -->
+						<div class="tree-line"><span class="prefix">│   </span><span class="prefix">├── </span><span class="file">extract and use JSON.hiplc</span></div>
+						<div class="tree-line"><span class="prefix">│   </span><span class="prefix">├── </span><span class="file">index.html</span></div>
+						<div class="tree-line"><span class="prefix">│   </span><span class="prefix">├── </span><span class="file">learning python in houdini examples.txt</span></div>
+
+						<!-- Render Section -->
+						<div class="tree-line">
+							<span class="prefix">│   </span><span class="prefix">├── </span>
+							<span class="folder" onclick="toggle(this)">RENDER</span>
+						</div>
+						<div class="content hidden">
+							<div class="tree-line"><span class="prefix">│   </span><span class="prefix">│   </span><span class="prefix">├── </span><span class="file image">ageGuesser_axelle_4.png</span></div>
+							<div class="tree-line"><span class="prefix">│   </span><span class="prefix">│   </span><span class="prefix">├── </span><span class="file image">ageGuesser_hilde_0.png</span></div>
+							<div class="tree-line"><span class="prefix">│   </span><span class="prefix">│   </span><span class="prefix">├── </span><span class="file image">ageGuesser_inne_2.png</span></div>
+							<div class="tree-line"><span class="prefix">│   </span><span class="prefix">│   </span><span class="prefix">├── </span><span class="file image">ageGuesser_johan_1.png</span></div>
+							<div class="tree-line"><span class="prefix">│   </span><span class="prefix">│   </span><span class="prefix">└── </span><span class="file image">ageGuesser_joris_3.png</span></div>
+						</div>
+
+						<div class="tree-line"><span class="prefix">│   </span><span class="prefix">└── </span><span class="file config">test.json</span></div>
+					</div>
+
+					<!-- pymeshlab -->
+					<div class="tree-line">
+						<span class="prefix">└── </span>
+						<span class="folder" onclick="toggle(this)">pymeshlab</span>
+					</div>
+					<div class="content hidden">
+						<div class="tree-line">
+							<span class="prefix">    </span><span class="prefix">├── </span>
+							<span class="folder" onclick="toggle(this)">backup</span>
+						</div>
+						<div class="content hidden">
+							<div class="tree-line"><span class="prefix">    </span><span class="prefix">│   </span><span class="prefix">└── </span><span class="file">meshlab_animation_bak1.hiplc</span></div>
+						</div>
+
+						<div class="tree-line">
+							<span class="prefix">    </span><span class="prefix">├── </span>
+							<span class="folder" onclick="toggle(this)">data</span>
+						</div>
+						<div class="content hidden">
+							<div class="tree-line"><span class="prefix">    </span><span class="prefix">│   </span><span class="prefix">├── </span><span class="file script">import subprocess.py</span></div>
+							<div class="tree-line"><span class="prefix">    </span><span class="prefix">│   </span><span class="prefix">├── </span><span class="file script">make_animation.py</span></div>
+							<div class="tree-line"><span class="prefix">    </span><span class="prefix">│   </span><span class="prefix">├── </span><span class="file script">myconfig.py</span></div>
+							<div class="tree-line"><span class="prefix">    </span><span class="prefix">│   </span><span class="prefix">└── </span><span class="file script">run.bat</span></div>
+						</div>
+
+						<div class="tree-line"><span class="prefix">    </span><span class="prefix">└── </span><span class="file">meshlab_animation.hiplc</span></div>
+					</div>
+				</div>
+				<div class="summary">9 directories, 29 files</div>
+			</div>
+		</div>
+
+		<!-- Three.js Scene (Middle Panel) -->
+		<div id="threejs_scene">
+			<div id="corner_text">
+				<div>compiling archive</div>
+				<div>1439/1661</div>
+				<div style="display: flex; flex-direction: column; gap: 2px; margin: 5px 0;">
+					<div>................................</div>
+					<div>................................</div>
+					<div>................................</div>
+					<div>................................</div>
+					<div>................................</div>
+					<div>................................</div>
+					<div>................................</div>
+					<div>................................</div>
+					<div>................................</div>
+					<div>................................</div>
+					<div>................................</div>
+					<div>................................</div>
+					<div>................................</div>
+				</div>
+				<div>87%</div>
+			</div>
+			<div id="left_corner_text">Left Corner Text</div>
+
+			<!-- Three.js Script -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="module">
+	import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.121.1/build/three.module.js';
+	import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/controls/OrbitControls.js';
+
+	const container = document.getElementById('threejs_scene');
+	
+	// Performance optimization: Create scene with fog disabled
+	const scene = new THREE.Scene();
+	scene.background = new THREE.Color(0x000000);
+
+	// Orthographic Camera setup - no need to change
+	const frustumSize = 6;
+	const aspect = container.clientWidth / container.clientHeight;
+	const camera = new THREE.OrthographicCamera(
+		frustumSize * aspect / -2,
+		frustumSize * aspect / 2,
+		frustumSize / 2,
+		frustumSize / -2,
+		1,
+		1000
+	);
+
+	camera.position.set(8, 8, 8);
+	camera.lookAt(0, 0, 0);
+
+	// Performance optimization: Renderer settings
+	const renderer = new THREE.WebGLRenderer({ 
+		antialias: true,
+		powerPreference: 'high-performance',
+		precision: 'mediump' // Good balance between quality and performance
+	});
+	renderer.setSize(container.clientWidth, container.clientHeight);
+	// Performance optimization: Disable shadow map
+	renderer.shadowMap.enabled = false;
+	container.appendChild(renderer.domElement);
+
+	// Optimized controls
+	const controls = new OrbitControls(camera, renderer.domElement);
+	controls.enableDamping = false; // Disabled as requested
+	controls.screenSpacePanning = true;
+	controls.minZoom = 0.5;
+	controls.maxZoom = 4;
+
+	// Performance optimization: Reusable geometries and materials
+	const planeGeometry = new THREE.PlaneGeometry(2, 2);
+	const spanContainer = document.createElement('div');
+	spanContainer.id = 'span';
+	spanContainer.style.position = 'absolute';
+	spanContainer.style.top = '0';
+	spanContainer.style.left = '0';
+	spanContainer.style.width = '100%';
+	spanContainer.style.height = '100%';
+	spanContainer.style.pointerEvents = 'none';
+	container.appendChild(spanContainer);
+
+	// Performance optimization: Texture loading
+	const textureLoader = new THREE.TextureLoader();
+	const textures = [
+		'/src2/archigrad.io/example/demoproject/2.png',
+		'/src2/archigrad.io/example/demoproject/3.png',
+		'/src2/archigrad.io/example/demoproject/2.png'
+	].map(url => {
+		const texture = textureLoader.load(url);
+		// Performance optimization: Optimize texture settings
+		texture.generateMipmaps = false;
+		texture.minFilter = THREE.NearestFilter;
+		texture.magFilter = THREE.NearestFilter;
+		return texture;
+	});
+
+	// Performance optimization: Create meshes efficiently
+	function createStack(position, texture, label, numPlanes = 150) {
+		const planes = [];
+		const material = new THREE.MeshBasicMaterial({ 
+			map: texture,
+			transparent: true,
+			opacity: 0.7,
+			depthWrite: false // Performance optimization for transparent objects
+		});
+
+		for (let i = 0; i < numPlanes; i++) {
+			const plane = new THREE.Mesh(planeGeometry, material);
+			plane.position.set(position.x, i * 0.1, position.z);
+			plane.rotation.x = -Math.PI / 2;
+			planes.push(plane);
+			scene.add(plane);
+
+			if (i === numPlanes - 1) {
+				const tagSpan = document.createElement('span');
+				tagSpan.className = 'tag';
+				tagSpan.style.position = 'absolute';
+				tagSpan.style.color = 'white';
+				tagSpan.style.pointerEvents = 'auto';
+				tagSpan.textContent = label;
+				spanContainer.appendChild(tagSpan);
+				plane.userData.tag = tagSpan;
+			}
+		}
+		return planes;
+	}
+
+	// Create stacks
+	const stacks = [
+		createStack({ x: 0, z: 0 }, textures[0], "Stack 1 - /src2/.../2.png"),
+		createStack({ x: -2.5, z: 0 }, textures[1], "Stack 2 - /src2/.../3.png"),
+		createStack({ x: 0, z: -2.5 }, textures[2], "Stack 3 - /src2/.../2.png")
+	];
+
+	// Performance optimization: Cached vector for calculations
+	const worldPos = new THREE.Vector3();
+	const screenPosition = new THREE.Vector3();
+
+	// Performance optimization: Optimized label updates
+	function updateLabels() {
+		scene.traverse((object) => {
+			if (object.userData.tag) {
+				object.getWorldPosition(worldPos);
+				screenPosition.copy(worldPos).project(camera);
+
+				const tag = object.userData.tag;
+				tag.style.left = ((screenPosition.x + 1) / 2) * container.clientWidth + 'px';
+				tag.style.top = ((-screenPosition.y + 1) / 2) * container.clientHeight + 'px';
+				tag.style.display = (
+					screenPosition.z < 1 && 
+					screenPosition.x > -1 && 
+					screenPosition.x < 1 && 
+					screenPosition.y > -1 && 
+					screenPosition.y < 1
+				) ? 'block' : 'none';
+			}
+		});
+	}
+
+	// Performance optimization: Simplified animation loop
+	function animate() {
+		requestAnimationFrame(animate);
+		controls.update();
+		updateLabels();
+		renderer.render(scene, camera);
+	}
+
+	// Performance optimization: Debounced resize handler
+	const resizeObserver = new ResizeObserver(() => {
+		const width = container.clientWidth;
+		const height = container.clientHeight;
+		const aspect = width / height;
+		
+		camera.left = frustumSize * aspect / -2;
+		camera.right = frustumSize * aspect / 2;
+		camera.top = frustumSize / 2;
+		camera.bottom = frustumSize / -2;
+		
+		camera.updateProjectionMatrix();
+		renderer.setSize(width, height);
+		updateLabels();
+	});
+
+	resizeObserver.observe(container);
+	animate();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+
+		<!-- Content Panel (Right Panel) -->
+		<div id="html_content">
+			<div id="content_wrapper">
+				<div class="inner-content">
+
+<div class="container">
+  <div class="title">Exploring Nature</div>
+  
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+  <div class="image-container">
+    <div class="image-wrapper">
+      <img src="/src2/archigrad.io/example/demoproject/1.png" alt="Mountain landscape" class="image"/>
+      <div class="image-caption">Mountain Vista</div>
+    </div>
+
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    <div class="image-wrapper">
+      <img src="/src2/archigrad.io/example/demoproject/2.png" alt="Mountain landscape" class="image"/>
+      <div class="image-caption">Lake at Sunset</div>
+    </div>
+
+    <div class="image-wrapper">
+      <img src="/src2/archigrad.io/example/demoproject/1.png" alt="Mountain landscape" class="image"/>
+      <div class="image-caption">Forest Trail</div>
+    </div>
+
+    <div class="image-wrapper">
+      <img src="/src2/archigrad.io/example/demoproject/3.png" alt="Mountain landscape" class="image"/>
+      <div class="image-caption">Desert Dunes</div>
+    </div>
+
+    <div class="image-wrapper">
+      <img src="/src2/archigrad.io/example/demoproject/1.png" alt="Mountain landscape" class="image"/>
+      <div class="image-caption">Hidden Falls</div>
+    </div>
+
+    <div class="image-wrapper">
+      <img src="/src2/archigrad.io/example/demoproject/3.png" alt="Mountain landscape" class="image"/>
+      <div class="image-caption">Canyon View</div>
+    </div>
+
+    <div class="image-wrapper">
+      <img src="/src2/archigrad.io/example/demoproject/2.png" alt="Mountain landscape" class="image"/>
+      <div class="image-caption">Coastal Sunset</div>
+    </div>
+  </div>
+
+  <p class="text">
+    Nature's beauty surrounds us in countless forms. From towering mountains to serene lakes, each vista tells its own story.
+  </p>
+
+  <div class="text">
+    <div class="bold">Did You Know?</div>
+    <p>The largest lake in the world by volume is Lake Baikal, containing about 20% of Earth's unfrozen fresh water.</p>
+  </div>
+
+  <p class="text">
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+    Environmental protection is crucial for preserving these natural wonders for future generations to enjoy and appreciate.
+  </p>
+</div>				</div>
+			</div>
+			<div id="bottom_corner_text">Bottom Corner Text</div>
+		</div>
+
+		<!-- Toggle Function -->
+		<script>
+			function toggle(element) {
+				const content = element.closest('.tree-line').nextElementSibling;
+				if (content && content.classList.contains('content')) {
+					content.classList.toggle('hidden');
+					element.classList.toggle('open');
+				}
+			}
+		</script>
+	</body>
+</html>
