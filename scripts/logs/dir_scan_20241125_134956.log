@@ -1,0 +1,169 @@
+
+=== Starting Image Processing ===
+Configuration:
+Quality: 85
+html_content desktop: (512, 512)
+html_content mobile: (256, 256)
+threejs_scene desktop: (1024, 1024)
+threejs_scene mobile: (256, 256)
+
+Processing: ./archigrad.io/example/demoproject/2.png
+Processing desktop ((512, 512))
+Error processing image ./archigrad.io/example/demoproject/2.png: module 'PIL.Image' has no attribute 'Resampling'
+Processing mobile ((256, 256))
+Error processing image ./archigrad.io/example/demoproject/2.png: module 'PIL.Image' has no attribute 'Resampling'
+Processing desktop ((1024, 1024))
+Error processing image ./archigrad.io/example/demoproject/2.png: module 'PIL.Image' has no attribute 'Resampling'
+Processing mobile ((256, 256))
+Error processing image ./archigrad.io/example/demoproject/2.png: module 'PIL.Image' has no attribute 'Resampling'
+
+Processing: ./archigrad.io/example/demoproject/1.png
+Processing desktop ((512, 512))
+Error processing image ./archigrad.io/example/demoproject/1.png: module 'PIL.Image' has no attribute 'Resampling'
+Processing mobile ((256, 256))
+Error processing image ./archigrad.io/example/demoproject/1.png: module 'PIL.Image' has no attribute 'Resampling'
+Processing desktop ((1024, 1024))
+Error processing image ./archigrad.io/example/demoproject/1.png: module 'PIL.Image' has no attribute 'Resampling'
+Processing mobile ((256, 256))
+Error processing image ./archigrad.io/example/demoproject/1.png: module 'PIL.Image' has no attribute 'Resampling'
+
+Processing: ./archigrad.io/example/demoproject/3.png
+Processing desktop ((512, 512))
+Error processing image ./archigrad.io/example/demoproject/3.png: module 'PIL.Image' has no attribute 'Resampling'
+Processing mobile ((256, 256))
+Error processing image ./archigrad.io/example/demoproject/3.png: module 'PIL.Image' has no attribute 'Resampling'
+Processing desktop ((1024, 1024))
+Error processing image ./archigrad.io/example/demoproject/3.png: module 'PIL.Image' has no attribute 'Resampling'
+Processing mobile ((256, 256))
+Error processing image ./archigrad.io/example/demoproject/3.png: module 'PIL.Image' has no attribute 'Resampling'
+
+Processing: ./archigrad.io/example/demoproject/.1.png
+Processing desktop ((512, 512))
+Error processing image ./archigrad.io/example/demoproject/.1.png: module 'PIL.Image' has no attribute 'Resampling'
+Processing mobile ((256, 256))
+Error processing image ./archigrad.io/example/demoproject/.1.png: module 'PIL.Image' has no attribute 'Resampling'
+Processing desktop ((1024, 1024))
+Error processing image ./archigrad.io/example/demoproject/.1.png: module 'PIL.Image' has no attribute 'Resampling'
+Processing mobile ((256, 256))
+Error processing image ./archigrad.io/example/demoproject/.1.png: module 'PIL.Image' has no attribute 'Resampling'
+
+=== Image Processing Summary ===
+Total processed: 0
+Total skipped: 0
+Total errors: 16
+
+=== Directory Scan Started ===
+Root path: ./
+Max depth: 5
+Allowed extensions: ['jpg', 'png', 'gif', 'txt', 'sh', 'py', 'obj', 'html', 'js', 'json', 'yml', 'mp4', 'css', 'log']
+Ignore patterns: ['_*', '.*', 'log*']
+
+Processing directory: ./
+Current depth: 0
+
+Processing directory: ./scripts
+Current depth: 0
+Filtered directories: {'logs'}
+Added file: data.json (36541 bytes)
+Added file: index2.html (7894 bytes)
+Added file: attempt.json (4992 bytes)
+Ignored file: .config.yml.swp
+Added file: testing.json (12229 bytes)
+Added file: index.html (8602 bytes)
+Added file: config.yml (2732 bytes)
+
+Processing directory: ./scripts/js
+Current depth: 1
+Added file: main.js (0 bytes)
+
+Processing directory: ./scripts/py
+Current depth: 1
+Filtered directories: {'__pycache__'}
+Ignored file: logger.py
+Added file: structure_utils.py (7324 bytes)
+Added file: image_utils.py (5356 bytes)
+Ignored file: .main.py.swp
+Added file: header_utils.py (5671 bytes)
+Added file: generator2.py (11363 bytes)
+Added file: config_utils.py (645 bytes)
+Ignored file: .image_utils.py.swp
+Added file: main.py (839 bytes)
+
+Processing directory: ./scripts/py/scripts
+Current depth: 2
+Filtered directories: {'logs'}
+
+Processing directory: ./scripts/styles
+Current depth: 1
+Added file: style.css (942 bytes)
+
+Processing directory: ./archigrad.io
+Current depth: 0
+
+Processing directory: ./archigrad.io/example
+Current depth: 1
+
+Processing directory: ./archigrad.io/example/demoproject
+Current depth: 2
+Added file: 2.png (940332 bytes)
+Added file: 1.png (838079 bytes)
+Added file: description.txt (964 bytes)
+Added file: 3.png (988067 bytes)
+Ignored file: .1.png
+
+Processing directory: ./archigrad.io/example/videos
+Current depth: 2
+Added file: admin_remove_project.mp4 (2036482 bytes)
+Added file: website_navigation.mp4 (6494720 bytes)
+Added file: admin_upload_project.mp4 (2254824 bytes)
+
+=== Creating File Structure ===
+Starting from root: ./
+
+Processing directory: ./
+
+Processing directory: ./archigrad.io
+
+Processing directory: ./archigrad.io/example
+
+Processing directory: ./archigrad.io/example/demoproject
+Ignoring item: .1.png
+Processed 4 items in ./archigrad.io/example/demoproject
+Total directory size: 2767442 bytes
+
+Processing directory: ./archigrad.io/example/videos
+Processed 3 items in ./archigrad.io/example/videos
+Total directory size: 10786026 bytes
+Processed 2 items in ./archigrad.io/example
+Total directory size: 13553468 bytes
+Processed 1 items in ./archigrad.io
+Total directory size: 13553468 bytes
+
+Processing directory: ./scripts
+Ignoring item: .config.yml.swp
+
+Processing directory: ./scripts/js
+Processed 1 items in ./scripts/js
+Total directory size: 0 bytes
+Ignoring item: logs
+
+Processing directory: ./scripts/py
+Ignoring item: .image_utils.py.swp
+Ignoring item: .main.py.swp
+Ignoring item: __pycache__
+Ignoring item: logger.py
+
+Processing directory: ./scripts/py/scripts
+Ignoring item: logs
+Processed 0 items in ./scripts/py/scripts
+Total directory size: 0 bytes
+Processed 7 items in ./scripts/py
+Total directory size: 31198 bytes
+
+Processing directory: ./scripts/styles
+Processed 1 items in ./scripts/styles
+Total directory size: 942 bytes
+Processed 9 items in ./scripts
+Total directory size: 105130 bytes
+Processed 2 items in ./
+Total directory size: 13658598 bytes
