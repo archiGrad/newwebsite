@@ -1,0 +1,23 @@
+#threejs_scene {
+    flex: 1.75;
+    height: 100%;
+    position: relative;
+}
+
+#corner_text {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    color: white;
+    border-radius: 3px;
+}
+
+#left_corner_text {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 3px;
+}
