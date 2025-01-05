@@ -1,0 +1,21 @@
+me: Deploy to GitHub Pages
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Prepare deployment
+        run: |
+          mkdir deploy
+          cp -r src/scripts/index.html src/scripts/js src/scripts/styles deploy/
+          
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: deploy # The folder we're deploying
+          branch: gh-pages # The branch to deploy to
