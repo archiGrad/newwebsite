@@ -1,0 +1,36 @@
+
+=== Processing Images ===
+Root path: ./
+Processing paths: {'html_desktop': './.html_desktop_processed', 'html_mobile': './.html_mobile_processed', 'threejs_desktop': './.threejs_desktop_processed', 'threejs_mobile': './.threejs_mobile_processed'}
+
+Processing image: .html_mobile_processed/.html_mobile_processed/archigrad.io/example/demoproject/2.png
+Resized ./.html_mobile_processed/.html_mobile_processed/archigrad.io/example/demoproject/2.png to [512, 512]
+Resized ./.html_mobile_processed/.html_mobile_processed/archigrad.io/example/demoproject/2.png to [256, 256]
+Resized ./.html_mobile_processed/.html_mobile_processed/archigrad.io/example/demoproject/2.png to [1024, 1024]
+Resized ./.html_mobile_processed/.html_mobile_processed/archigrad.io/example/demoproject/2.png to [256, 256]
+
+Processing image: .html_mobile_processed/.html_mobile_processed/archigrad.io/example/demoproject/1.png
+Resized ./.html_mobile_processed/.html_mobile_processed/archigrad.io/example/demoproject/1.png to [512, 512]
+Resized ./.html_mobile_processed/.html_mobile_processed/archigrad.io/example/demoproject/1.png to [256, 256]
+Resized ./.html_mobile_processed/.html_mobile_processed/archigrad.io/example/demoproject/1.png to [1024, 1024]
+Resized ./.html_mobile_processed/.html_mobile_processed/archigrad.io/example/demoproject/1.png to [256, 256]
+
+Processing image: .html_mobile_processed/.html_mobile_processed/archigrad.io/example/demoproject/3.png
+Resized ./.html_mobile_processed/.html_mobile_processed/archigrad.io/example/demoproject/3.png to [512, 512]
+Resized ./.html_mobile_processed/.html_mobile_processed/archigrad.io/example/demoproject/3.png to [256, 256]
+Resized ./.html_mobile_processed/.html_mobile_processed/archigrad.io/example/demoproject/3.png to [1024, 1024]
+Resized ./.html_mobile_processed/.html_mobile_processed/archigrad.io/example/demoproject/3.png to [256, 256]
+
+Processing image: .html_mobile_processed/.threejs_mobile_processed/.html_mobile_processed/archigrad.io/example/demoproject/2.png
+Resized ./.html_mobile_processed/.threejs_mobile_processed/.html_mobile_processed/archigrad.io/example/demoproject/2.png to [512, 512]
+Resized ./.html_mobile_processed/.threejs_mobile_processed/.html_mobile_processed/archigrad.io/example/demoproject/2.png to [256, 256]
+Resized ./.html_mobile_processed/.threejs_mobile_processed/.html_mobile_processed/archigrad.io/example/demoproject/2.png to [1024, 1024]
+Resized ./.html_mobile_processed/.threejs_mobile_processed/.html_mobile_processed/archigrad.io/example/demoproject/2.png to [256, 256]
+
+Processing image: .html_mobile_processed/.threejs_mobile_processed/.html_mobile_processed/archigrad.io/example/demoproject/1.png
+Resized ./.html_mobile_processed/.threejs_mobile_processed/.html_mobile_processed/archigrad.io/example/demoproject/1.png to [512, 512]
+Resized ./.html_mobile_processed/.threejs_mobile_processed/.html_mobile_processed/archigrad.io/example/demoproject/1.png to [256, 256]
+Resized ./.html_mobile_processed/.threejs_mobile_processed/.html_mobile_processed/archigrad.io/example/demoproject/1.png to [1024, 1024]
+Resized ./.html_mobile_processed/.threejs_mobile_processed/.html_mobile_processed/archigrad.io/example/demoproject/1.png to [256, 256]
+
+Processing image: .html_mobile_processed/.threejs_mobile_processed/.html_mobile_processed/archigrad.io/example/demoproject/3.png
