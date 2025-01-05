@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="styles/main.css">
-		<link rel="stylesheet" href="styles/filetree.css">
-		<link rel="stylesheet" href="styles/threejs.css">
-		<link rel="stylesheet" href="styles/content.css">
+		<link rel="stylesheet" href="scripts/styles/main.css">
+		<link rel="stylesheet" href="scripts/styles/filetree.css">
+		<link rel="stylesheet" href="scripts/styles/threejs.css">
+		<link rel="stylesheet" href="scripts/styles/content.css">
 	</head>
 
 	<body>
@@ -217,7 +217,7 @@
 	});
 
 	// Performance optimization: Create meshes efficiently
-	function createStack(position, texture, label, numPlanes = 150) {
+	function createStack(position, texture, label, numPlanes = 15) {
 		const planes = [];
 		const material = new THREE.MeshBasicMaterial({ 
 			map: texture,
