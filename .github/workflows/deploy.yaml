@@ -10,13 +10,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # We don't need the prepare deployment step anymore since we're deploying from root
+      # We're deploying everything except some specific files
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: . # Deploy everything from the root
+          folder: . # Deploy from root
           branch: gh-pages
-          # Remove these files/folders from deployment
+          clean: true # Automatically remove deleted files from the deployment
           clean-exclude: |
             .github
             .gitignore
