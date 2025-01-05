@@ -12,7 +12,7 @@ jobs:
       - name: Prepare deployment
         run: |
           mkdir deploy
-          cp -r src/scripts/index.html src/scripts/js src/scripts/styles deploy/
+          cp -r src/* deploy/
           
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
