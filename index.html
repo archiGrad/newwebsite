@@ -129,7 +129,10 @@
 
 		<!-- Three.js Scene (Middle Panel) -->
 		<div id="threejs_scene">
-			<div id="corner_text">
+			
+
+
+	<!--	<div id="corner_text">
 				<div>compiling archive</div>
 				<div>1439/1661</div>
 				<div style="display: flex; flex-direction: column; gap: 2px; margin: 5px 0;">
@@ -139,7 +142,18 @@
 				</div>
 				<div>87%</div>
 			</div>
-			<div id="left_corner_text">Left Corner Text</div>
+			<div id="left_corner_text">Left Corner Text</div> -->
+
+		<div id="corner_text">
+		    <div>compiling archive</div>
+		    <div id="loading_counter">0/0</div>
+		    <div id="loading_dots" style="display: flex; flex-direction: column; gap: 2px; margin: 5px 0;">
+			<div></div>
+			<div></div>
+			<div></div>
+		    </div>
+		    <div id="loading_percentage">0%</div>
+		</div>
 
 			<!-- Three.js Script -->
 
@@ -259,25 +273,38 @@
 	const screenPosition = new THREE.Vector3();
 
 	// Performance optimization: Optimized label updates
-	function updateLabels() {
-		scene.traverse((object) => {
-			if (object.userData.tag) {
-				object.getWorldPosition(worldPos);
-				screenPosition.copy(worldPos).project(camera);
 
-				const tag = object.userData.tag;
-				tag.style.left = ((screenPosition.x + 1) / 2) * container.clientWidth + 'px';
-				tag.style.top = ((-screenPosition.y + 1) / 2) * container.clientHeight + 'px';
-				tag.style.display = (
-					screenPosition.z < 1 && 
-					screenPosition.x > -1 && 
-					screenPosition.x < 1 && 
-					screenPosition.y > -1 && 
-					screenPosition.y < 1
-				) ? 'block' : 'none';
-			}
-		});
-	}
+function updateLabels() {
+    scene.traverse((object) => {
+        if (object.userData.tag) {
+            object.getWorldPosition(worldPos);
+            screenPosition.copy(worldPos).project(camera);
+
+            const tag = object.userData.tag;
+            const normalizedX = (screenPosition.x + 1) / 2; // 0 to 1
+            
+            // If label is in the right half of the container, align right
+            if (normalizedX > 0.5) {
+                tag.style.right = (100 - normalizedX * 100) + '%';
+                tag.style.left = 'auto';
+                tag.style.textAlign = 'right';
+            } else {
+                tag.style.left = (normalizedX * 100) + '%';
+                tag.style.right = 'auto';
+                tag.style.textAlign = 'left';
+            }
+
+            tag.style.top = ((-screenPosition.y + 1) / 2) * container.clientHeight + 'px';
+            tag.style.display = (
+                screenPosition.z < 1 && 
+                screenPosition.x > -1 && 
+                screenPosition.x < 1 && 
+                screenPosition.y > -1 && 
+                screenPosition.y < 1
+            ) ? 'block' : 'none';
+        }
+    });
+}
 
 	// Performance optimization: Simplified animation loop
 	function animate() {
