@@ -1,12 +1,10 @@
 @font-face {
     font-family: 'Ubuntu Mono';
     src: url('./font/UbuntuMono-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
 }
 
 html, body {
+    color: white;
     margin: 0;
     padding: 0;
     height: 100%;
@@ -19,13 +17,30 @@ body {
     display: flex;
 }
 
+#dir_tree {
+    flex: 0.35;
+    font-size:1em;
+}
+
+#threejs_scene {
+    flex: 1;
+}
+
+
+#html_content {
+    flex: 1;
+}
+
+
+
+
 @media screen and (max-width: 1100px) {
     #threejs_scene {
         display: none;
     }
     
     #dir_tree {
-        flex: 1;
+        flex: 0.5;
     }
     
     #html_content {
@@ -44,13 +59,11 @@ body {
     }
     
     #dir_tree {
-        height: calc(30vh);
         border: none;
         border-bottom: 1px solid rgba(255,255,255,0.2);
     }
     
     #html_content {
-        height: calc(70vh);
         border: none;
     }
 }

@@ -1,5 +1,4 @@
 #threejs_scene {
-    flex: 4;
     height: 100%;
     position: relative;
 }
@@ -9,15 +8,22 @@
     top: 10px;
     right: 10px;
     padding: 5px;
-    color: white;
-    border-radius: 3px;
+    color: red;
 }
 
-#left_corner_text {
-    position: absolute;
+.camera-button {
+    cursor: pointer;
+    background:transparent;
+    border: none;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 1em;
+    color: white;
+ 
+}
+.camera-controls {
     top: 10px;
     left: 10px;
-    background-color: white;
-    padding: 5px;
-    border-radius: 3px;
+    position: absolute;
 }
+
+
