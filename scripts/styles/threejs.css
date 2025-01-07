@@ -15,9 +15,10 @@
     cursor: pointer;
     background:transparent;
     border: none;
-    font-family: 'Ubuntu Mono', monospace;
+    /*font-family: 'Ubuntu Mono', monospace;*/
+    font-family: monospace;
     font-size: 1em;
-    color: white;
+    color: red;
  
 }
 .camera-controls {
@@ -25,5 +26,40 @@
     left: 10px;
     position: absolute;
 }
+
+#threejs_title {
+    top: 30px;
+    left: 10px;
+position: absolute;
+	font-size: 4em;
+	font-weight: Bold;
+}
+
+
+#comments{
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    max-width: 300px;
+    color: black;
+}
+
+#comments summary {
+    cursor: pointer;
+}
+
+#comments[open] summary {
+    margin-bottom: 10px;
+}
+
+#comments .comment {
+    padding: 10px;
+    margin: 0;
+}
+
+
+
+
+
 
 
