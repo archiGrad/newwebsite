@@ -41,11 +41,6 @@ display:
     - date
     - size
     - user
-  mobile:
-    switch_to_mobile_when: "50%"
-    show_dir_tree: true
-    show_html_content: true
-    show_theejs_scene: true
 
 media:
   image_quality: 85
